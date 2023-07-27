@@ -1,0 +1,552 @@
+/*
+Theme Name: 
+Author: 
+Version: 1.0.0
+
+
+Table of Content
+===================================================
+
+    1. Common Css
+    2. Nav Section
+    3. Banner Section
+*/
+/* Common Css Start */
+h1,h2,h3,h4,h5,h6,
+p,
+ul,ol,
+span,
+small{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style-type: none;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+/*//Common CSS Start*/
+/*Nav Section CSS Start*/
+
+.brand img{
+    transition: all linear 0.5s;
+}
+.brand:hover img{
+    margin-left: 5px;
+}
+#nav{
+    background-color: #eee;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+#main_menu ul li a {
+    padding: 20px;
+    transition: all linear 0.5s;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#main_menu ul li:hover a{
+    color: orange;
+}
+/*//Nav Section CSS End*/
+/*Banner Section CSS Start*/
+.banner_slider_item{
+    background-position: center !important;
+    background-size: cover !important;
+    position: relative;
+    height: 560px;
+    z-index: 1;
+}
+.banner_slider_item::before{
+   position: absolute;
+   background-color: rgba(46, 79, 66, 0.6);
+   inset: 0;
+   content:'';
+   z-index: -1;
+}
+.banner_slick_arrow {
+    top: 273px;
+    position: absolute;
+    z-index: 999;
+    transform: translateY(-50%);
+    font-size: 33px;
+    cursor: pointer;
+    color: #fff;
+    padding: 13px;
+    border-radius: 50%;
+    background-color: orange;
+}
+.banner_slick_arrow.fa-arrow-left{
+    left: 46px;
+    transform: translateX(-50%);
+}
+.banner_slick_arrow.fa-arrow-right{
+    right: 14px;
+transform: translateX(-14%);
+}
+.banner_slider_dots{
+    left: 50%;
+    display: flex;
+    position: absolute;
+    top: 496px;
+    flex-wrap: wrap;
+    font-size: 0;
+    transform: translateX(-50%);
+}
+.banner_slider_dots li{
+    line-height: 0;
+}
+.banner_slider_dots li button{
+    height: 20px;
+    margin: 5px;
+    width: 19px;
+    border-radius: 50%;
+   background: none;
+    border: 1px solid orange;
+}
+.banner_slider_dots li.slick-active button{
+    background-color: orange;
+    border: none;
+}
+.banner_slide_smaller_item_heading {
+    margin-top: 142px;
+}
+.banner_slide_smaller_item_heading h3{
+    font-weight: bold;
+    color: #fff;
+}
+.banner_slider_item_border_start{
+    margin-top: 8px;
+}
+.banner_slider_item_border {
+    width: 220px;
+    margin:auto;
+    border: 3px dotted orange;
+}
+.banner_slider_bigger_items_headings {
+    margin-top: 32px;
+}
+.banner_slider_bigger_items_headings h1{
+    letter-spacing: 14px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.banner_slider_item_paragraph{
+    margin-top: 13px;
+}
+.banner_slider_item_paragraph p{
+    margin: auto;
+    color: #FFF;
+    width: 756px;
+}
+.banner_slider_item_reading {
+    margin-top: 52px;
+}
+.banner_slider_item_reading a{
+    font-size: 25px;
+    font-weight: bold;
+    transition: all linear 0.5s;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid orange;
+    padding: 8px;
+}
+.banner_slider_item_reading:hover a{
+    background-color: orange;
+    border: none;
+    border-radius: 8px;
+}
+/*//Banner Section CSS End*/
+/*About Section CSS Start*/
+.about_image_written_section_part{
+    margin-top: 111px;
+}
+.about_image_section img{
+    height: 342px;
+    border-right: 5px groove orange;
+    width: 601px;
+}
+
+.about_written_section_heading h3{
+    border-bottom: 2px dotted orange;
+    display: inline-block;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.about_written_section_paragraph{
+    margin-top: 15px;
+}
+.about_written_section_paragraph p{
+    text-align: justify;
+    font-weight: bold;
+}
+.about_written_section_reading{
+    margin-top: 42px;
+}
+.about_written_section_reading a{
+    font-size: 25px;
+    font-weight: bold;
+    transition: all linear 0.5s;
+    color: #000;
+    text-transform: uppercase;
+    border: 1px solid orange;
+    padding: 8px;
+}
+.test{
+    color: orange;
+    text-transform: uppercase;
+}
+.about_written_section_reading:hover a{
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+}
+/*//About Section CSS End*/
+/*Achievement Section CSS Start */
+#achievement{
+    margin-top: 111px;
+    background-image: url(../img/achievement.jpg);
+    position: relative;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+     height: 475px;
+     z-index: 1;
+}
+#achievement::before{
+    position: absolute;
+    background-color: rgba(57, 58, 59, 0.60);
+    inset: 0;
+    content: '';
+    z-index: -1;
+}
+.achievement_heading{
+    margin-top: 111px;
+}
+.achievement_heading h3{
+    font-weight: bold;
+    display: inline-block;
+    color: #fff;
+    border-bottom: 1px dotted orange;
+    padding-bottom: 5px;
+}
+.achievement_sections_part{
+    margin-top: 42px;
+}
+.icons_achievements_sections i{
+    color: #fff;
+    font-size: 50px;
+}
+.achievement_icons_professions_sections{
+    margin-top: 32px;
+}
+.profession_achievement h5{
+    font-weight: bold;
+    color: #fff;
+}
+.achievement_icons_numbers_sections{
+    margin-top: 32px;
+}
+.icons_numbers_achevement h1{
+    font-size: 72px;
+    font-weight: bold;
+    color: orange;
+}
+/*//Achievement Section CSS End */
+/*Gallary Section CSS Start*/
+.gallary_content{
+    margin-top: 111px;
+}
+.gallary_headings h3{
+    font-weight: bold;
+    display: inline-block;
+    color: #000;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted orange;
+}
+.gallary_menu_section{
+    margin-top: 32px;
+}
+.gallary_menu_section ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gallary_menu_section ul li{
+    margin: 14px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    padding: 9px;
+}
+.gallary_menu_section ul li.active,
+.gallary_menu_section ul li:hover{
+    color: #fff;
+    background-color: orange;
+    border-radius: 8px;
+}
+.gallary_image_section {
+    margin-top: 52px;
+}
+.image_gallary{
+    position: relative;
+    margin-top: 15px;
+}
+.image_gallary img{
+    height: 215px;
+    transition: all linear 0.5s;
+    width: 315px;
+    padding: 13px 13px;
+}
+.image_gallary:hover img{
+    background-color: #eee;
+}
+.image_gallary_overlay{
+    left: 13px;
+    right: 28px;
+    transition: all linear 0.5s;
+    visibility: hidden;
+   position: absolute;
+   background-color: rgba(84, 83, 98, 0.40);
+   top: 13px;
+  bottom: 13px;
+  opacity: 0;
+}
+.image_gallary:hover .image_gallary_overlay{
+    visibility: visible;
+    opacity: 1;
+}
+.image_gallary_overlay_content{
+    margin-top: 62px;
+}
+.image_gallary_overlay_headings h6{
+    font-weight: bold;
+    color: #fff;
+}
+.image_gallary_overlay_paragraph{
+    margin-top: 4px;
+}
+.image_gallary_overlay_paragraph p{
+    font-weight: bold;
+    font-size: 11px;
+    color: #fff;
+}
+
+.image_gallary_overlay_icons{
+    margin-top: 4px;
+}
+.image_gallary_overlay_icons a i{
+    color: #fff;
+    transition: all linear 0.5s;
+    background-color: orange;
+    padding: 6px;
+}
+.image_gallary_overlay_icons a:hover i{
+    color: #000;
+    border-radius: 8px;
+}
+/*//Gallary Section CSS End*/
+/*Offer Section CSS Start*/
+.offer_content_heading{
+    margin-top: 111px;
+}
+.offer_content_heading h3{
+    font-weight: bold;
+    display: inline-block;
+    color: #000;
+    border-bottom: 1px dotted orange;
+    padding-bottom: 5px;
+}
+.offer_image_written_sections_parts{
+    margin-top: 42px;
+}
+.offer_image_sections img{
+    height: 562px;
+    border-radius: 13px 0 0 13px;
+    width: 653px;
+}
+.offer_written_section{
+    height: 562px;
+    background-color: orange;
+    border-radius: 0 13px 13px 0;
+     width: 633px;
+}
+.offer_written_heading{
+    padding-top: 162px;
+}
+.offer_written_heading h3{
+    letter-spacing: 9px;
+    font-weight: bold;
+    color: #000;
+}
+.offer_written_paragraph{
+    margin-top: 13px;
+}
+.offer_written_paragraph p{
+    font-weight: bold;
+    color: #000;
+}
+.count_down{
+    margin-top: 52px;
+}
+.count_down_item{
+    margin: auto;
+}
+.count_down_item span{
+    font-weight: bold;
+    display: inline-block;
+    font-size: 60px;
+    color: #000;
+    border-bottom: 3px dotted #000;
+    padding-bottom: 5px;
+}
+.during span{
+    font-weight: bold;
+    color: #000;
+font-size: 19px;
+border-bottom: none;
+}
+/*//Offer Section CSS End*/
+/*Portfolio Section CSS Start*/
+.portfolio_heading{
+    margin-top: 111px;
+}
+.portfolio_heading h3{
+    font-weight: bold;
+    display: inline-block;
+    color: #000;
+    text-transform: uppercase;
+    border-bottom: 1px dotted orange;
+    padding-bottom: 5px;
+}
+.portfolio_section_part{
+    margin-top: 42px;
+}
+.img_portfolio{
+    position: relative;
+}
+.portfolio_image_section img{
+    height: 215px;
+    width: 315px;
+    border: 5px groove orange;
+}
+.portfolio_image_section_overlay{
+    left: 5px;
+    position: absolute;
+    top: 4px;
+}
+.portfolio_image_section_overlay_icons a i{
+    transition: all linear 0.5s;
+    color: #000;
+    visibility: hidden;
+    background: orange;
+    padding: 4px 8px;
+    opacity: 0;
+}
+.portfolio_image_section_overlay_icons a:hover i{
+    opacity: 1;
+    color: #fff;
+    visibility: visible;
+}
+/*Portfolio Section CSS End*/
+/*Contact Section CSS Start*/
+#contact{
+    margin-top: 52px;
+    background-color: #eee;
+    height: 550px;
+}
+.contact_content_heading{
+    margin-top: 42px;
+}
+.contact_content_heading h3{
+    font-weight: bold;
+    display: inline-block;
+    color: #000;
+    text-transform: uppercase;
+    border-bottom: 1px dotted orange;
+    padding-bottom: 5px;
+}
+.contact_form_sections{
+    margin-top: 62px;
+}
+.contact_form{
+    margin:auto;
+background-color: #cfc91d;
+width: 260px;
+height: 333px;
+}
+.name_form{
+    padding-top: 25px;
+}
+.name_form input{
+    width: 235px;
+font-size: 11px;
+border: none;
+height: 33px;
+}
+.name_form input:focus{
+    outline: none;
+    box-shadow: none;
+}
+.email_form {
+   padding-top: 15px;
+}
+.email_form input:focus{
+    outline: none;
+    box-shadow: none;
+}
+.email_form input{
+    width: 235px;
+    font-size: 11px;
+    border: none;
+    height: 33px;
+}
+.subject_form {
+    padding-top: 15px;
+ }
+ .subject_form input:focus{
+    outline: none;
+    box-shadow: none;
+}
+ .subject_form input{
+    width: 235px;
+    font-size: 11px;
+    border: none;
+    height: 33px;
+}
+.message_form {
+    padding-top: 15px;
+ }
+ .message_form textarea:focus{
+    outline: none;
+    box-shadow: none;
+ }
+ .message_form textarea{
+    width: 235px;
+    font-size: 11px;
+    border: none;
+    height: 93px;
+ } 
+ .submit_button {
+    margin-top: 20px;
+ }
+ .submit_button button{
+    font-weight: bold;
+    background-color: #eee;
+    color: #000;
+    border-radius: 9px;
+    border: none;
+ }
+ 
+ .submit_button button:focus{
+    color: #fff;
+    background-color: green;
+ }
+/*//Contact Section CSS End*/
